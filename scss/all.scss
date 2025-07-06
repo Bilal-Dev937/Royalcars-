@@ -413,7 +413,7 @@ a {
 	.image {
 		height: 540px;
 		width: 100%;
-		background-image: url(/images/Adobe.jpg);
+		background-image: url(../images/Adobe.jpg);
 
 		.image-dark {
 			height: 100%;
@@ -545,7 +545,7 @@ a {
 		padding: 50px 0 0;
 
 		.search-form {
-			background-image: url(/images/form-bg.jpg);
+			background-image: url(../images/form-bg.jpg);
 			padding: 30px 30px 20px;
 
 			.head-map {
@@ -803,7 +803,7 @@ a {
 }
 
 #car-drivers {
-	background: url(/images/driver-bg-dark.jpg);
+	background: url(../images/driver-bg-dark.jpg);
 	padding: 0 0 125px;
 
 	.container {
@@ -1351,7 +1351,7 @@ a {
 }
 
 .latest-news {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/images/latest-news-bg.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/latest-news-bg.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -1556,7 +1556,7 @@ a {
 		content: "";
 		width: 450px;
 		height: 485px;
-		background: url(/images/footer-car.png) no-repeat;
+		background: url(../images/footer-car.png) no-repeat;
 		background-size: auto;
 		background-size: cover;
 		position: absolute;
