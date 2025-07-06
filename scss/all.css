@@ -1,0 +1,960 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #fff;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+#header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  padding: 30px 0 15px;
+}
+#header.header_fixed {
+  background: #000;
+}
+#header .container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+#header .left-col {
+  display: flex;
+  align-items: center;
+}
+#header .left-col .logo {
+  width: 263px;
+  height: 55px;
+  padding: 0 15px;
+}
+#header .left-col .cta-left {
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+#header .left-col .cta-left a {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  padding: 0 15px;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+#header .left-col .cta-left a:hover {
+  background: #ffc926;
+}
+#header .left-col .cta-left .search {
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+#header .left-col .cta-left i {
+  height: 29px;
+  width: 20px;
+}
+#header .left-col .cta-left h3 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+}
+
+#nav > ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+#nav > ul > li {
+  position: relative;
+}
+#nav > ul > li > a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 5px;
+}
+#nav > ul > li > a:hover {
+  color: #ffc926;
+}
+#nav > ul > li > ul {
+  list-style: none;
+  font-size: 13px;
+  line-height: 24px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 160px;
+  display: none;
+}
+#nav > ul > li > ul a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  padding: 15px 10px;
+  border-bottom: 1px solid #000;
+}
+#nav > ul > li > ul a:hover {
+  background: #ffc926;
+}
+#nav > ul > li:hover > ul {
+  display: block;
+}
+
+#main .swiper-holder swiper-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+#main .swiper-holder swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main .swiper-holder swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#main .swiper-holder .swiper-button-next,
+#main .swiper-holder .swiper-button-prev {
+  font-size: 25px;
+  line-height: 40px;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 100%;
+  color: #fff;
+  text-align: center;
+}
+#main .swiper-holder .search-car {
+  position: absolute;
+  top: 99%;
+  left: 10%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+}
+#main .swiper-holder .search-car .form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 8px 12px;
+}
+#main .swiper-holder .search-car .form-group input {
+  width: 263px;
+  height: 50px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 21px;
+  border: none;
+  color: #fff;
+  background: #ffcd00;
+}
+#main .swiper-holder .search-car .form-group input:hover {
+  background: gray;
+}
+#main .swiper-holder .search-car .form-group label {
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0 0 10px;
+  color: #fff;
+}
+#main .swiper-holder .search-car .form-group .car-brand {
+  width: 263px;
+  height: 50px;
+  font-size: 17px;
+  line-height: 21px;
+  color: #999999;
+  padding: 8px 12px;
+  border: none;
+}
+#main .swiper-holder .search-car .form-group .search {
+  visibility: hidden;
+}
+
+#advantage-wrapper {
+  background: #f8f4da;
+  padding: 0 0 100px;
+}
+#advantage-wrapper .advantages-head {
+  padding: 130px 0 50px;
+}
+#advantage-wrapper .advantages-head .container p {
+  text-align: center;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 3px;
+}
+#advantage-wrapper .advantages-head .container h2 {
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 44px;
+  padding: 20px 0 0;
+  text-align: center;
+}
+#advantage-wrapper .advantages-head .container h2 strong {
+  font-weight: 700;
+}
+#advantage-wrapper .advantages .container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+#advantage-wrapper .advantages .container .advantage-box {
+  background: #fff;
+  width: 390px;
+  padding: 15px 50px 30px;
+  transition: all 0.3s linear;
+}
+#advantage-wrapper .advantages .container .advantage-box a {
+  color: #000;
+  text-decoration: none;
+}
+#advantage-wrapper .advantages .container .advantage-box a .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 15px;
+}
+#advantage-wrapper .advantages .container .advantage-box a h3 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: center;
+}
+#advantage-wrapper .advantages .container .advantage-box a p {
+  font-size: 13px;
+  line-height: 20px;
+  color: #999;
+  text-align: center;
+  padding: 10px 0 0;
+}
+#advantage-wrapper .advantages .container .advantage-box:hover {
+  background: #ffcd00;
+}
+#advantage-wrapper .advantages .container .advantage-box:hover a .icon img {
+  filter: brightness(0) invert(100%);
+}
+#advantage-wrapper .advantages .container .advantage-box:hover a h3 {
+  color: #fff;
+}
+#advantage-wrapper .advantages .container .advantage-box:hover a p {
+  color: #fff;
+}
+
+#about-us {
+  margin: 150px 0 110px;
+}
+#about-us .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#about-us .container .image-box {
+  margin: 0 15px;
+  width: 1266px;
+  height: 503px;
+}
+#about-us .container .info .about-head {
+  padding: 0 0 70px;
+}
+#about-us .container .info .about-head p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 3px;
+}
+#about-us .container .info .about-head h2 {
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 44px;
+  padding: 15px 0 0;
+  margin: 0 0 8px;
+}
+#about-us .container .info .about-head h2 strong {
+  font-weight: 700;
+}
+#about-us .container .info .about-info p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #777777;
+  margin: 0 0 16px;
+}
+#about-us .container .info .about-info ul {
+  list-style: none;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 32px;
+  padding: 0 0 30px;
+}
+#about-us .container .info .about-info ul i {
+  color: #ffcd00;
+}
+
+.star-rating .checked {
+  color: orange;
+}
+
+#new-members {
+  position: relative;
+}
+#new-members .image {
+  height: 540px;
+  width: 100%;
+  background-image: url(/images/Adobe.jpg);
+}
+#new-members .image .image-dark {
+  height: 100%;
+  width: 100%;
+  background: black;
+  opacity: 0.9;
+}
+#new-members .info-members {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  z-index: 15;
+}
+#new-members .info-members .container .info-head {
+  padding: 0 0 70px;
+}
+#new-members .info-members .container .info-head p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 3px;
+}
+#new-members .info-members .container .info-head h2 {
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 44px;
+  color: #ffcd00;
+  padding: 15px 0 0;
+}
+#new-members .info-members .container .info-head h2 strong {
+  font-weight: 700;
+}
+#new-members .info-members .container .car-row {
+  display: flex;
+  align-items: center;
+}
+#new-members .info-members .container .car-row .info-box {
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+#new-members .info-members .container .car-row .info-box .image-box {
+  height: 100px;
+  width: 100px;
+}
+#new-members .info-members .container .car-row .info-box .car-info {
+  padding: 0 0 0 14px;
+}
+#new-members .info-members .container .car-row .info-box .car-info h4 {
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 23px;
+}
+#new-members .info-members .container .car-row .info-box .car-info h4 a {
+  color: #fff;
+}
+#new-members .info-members .container .car-row .info-box .car-info h4 a:hover {
+  color: #ffcd00;
+}
+#new-members .info-members .container .car-row .info-box .car-info p {
+  font-size: 13px;
+  line-height: 20px;
+  color: #777777;
+}
+#new-members .info-members .container .car-row .info-box .car-info p .price {
+  font-weight: 700;
+  color: #fff;
+}
+#new-members .info-members .container .car-row .info-box .car-info p .day {
+  color: #fff;
+}
+#new-members .info-members .container .car-row .info-box .car-info ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  font-size: 11px;
+  line-height: 16px;
+  gap: 5px;
+}
+#new-members .info-members .container .car-row .info-box .car-info ul li {
+  background: #444444;
+  color: #999;
+  padding: 2px 10px;
+}
+#new-members .info-members .container .car-row .info-box .car-info ul li:hover {
+  background: #ffcd00;
+}
+#new-members .info-members .container .car-row .info-box .car-info ul li:hover i {
+  color: #fff;
+}
+#new-members .info-members .container .car-row .info-box .car-info ul li:hover span {
+  color: #fff;
+}
+#new-members .info-members .container .car-row .info-box .car-info ul i {
+  margin: 0 5px 0 0;
+}
+
+#maps-search {
+  padding: 0 0 150px;
+  background: #f8f4da;
+}
+#maps-search .container {
+  padding: 50px 0 0;
+}
+#maps-search .container .search-form {
+  background-image: url(/images/form-bg.jpg);
+  padding: 30px 30px 20px;
+}
+#maps-search .container .search-form .head-map {
+  margin: 0 0 25px;
+}
+#maps-search .container .search-form .head-map h3 {
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 35px;
+  color: #fff;
+}
+#maps-search .container .search-form .maps-searching {
+  display: flex;
+  align-items: center;
+}
+#maps-search .container .search-form .maps-searching .form-group2 {
+  display: flex;
+  flex-direction: column;
+  margin: 8px 12px;
+}
+#maps-search .container .search-form .maps-searching .form-group2 .search-btn2 {
+  width: 263px;
+  height: 50px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 21px;
+  border: none;
+  color: #fff;
+  background: #ffcd00;
+}
+#maps-search .container .search-form .maps-searching .form-group2 .search-btn2:hover {
+  background: #333;
+}
+#maps-search .container .search-form .maps-searching .form-group2 .name {
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0 0 10px;
+  color: #fff;
+}
+#maps-search .container .search-form .maps-searching .form-group2 .car-brand2 {
+  width: 263px;
+  height: 50px;
+  font-size: 17px;
+  line-height: 21px;
+  color: #999999;
+  padding: 8px 12px;
+  border: none;
+}
+#maps-search .container .search-form .maps-searching .form-group2 .search2 {
+  visibility: hidden;
+}
+#maps-search .container .offer-head {
+  padding: 100px 0 70px;
+}
+#maps-search .container .offer-head p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+#maps-search .container .offer-head h2 {
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 44px;
+  text-align: center;
+}
+#maps-search .container .offer-head h2 strong {
+  font-weight: 700;
+}
+#maps-search .container .car-row2 {
+  display: flex;
+  align-items: center;
+}
+#maps-search .container .car-row2 .feature-car-box {
+  height: 353px;
+  width: 390px;
+  background: #fff;
+  margin: 0 15px;
+}
+#maps-search .container .car-row2 .feature-car-box:hover .rent-btn button {
+  display: block;
+}
+#maps-search .container .car-row2 .feature-car-box .image-box {
+  padding: 30px 0 0;
+  text-align: center;
+  width: 250px;
+  height: 156px;
+  margin: 0 62px;
+}
+#maps-search .container .car-row2 .feature-car-box h4 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 42px;
+  text-align: center;
+  padding: 10px 0 0;
+}
+#maps-search .container .car-row2 .feature-car-box h4 .light {
+  font-weight: 400;
+}
+#maps-search .container .car-row2 .feature-car-box p {
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 0 30px;
+}
+#maps-search .container .car-row2 .feature-car-box ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 16px;
+  gap: 5px;
+  padding: 0 0 25px;
+}
+#maps-search .container .car-row2 .feature-car-box ul li {
+  color: #999;
+  padding: 2px 10px;
+}
+#maps-search .container .car-row2 .feature-car-box ul li:hover {
+  background: #ffcd00;
+}
+#maps-search .container .car-row2 .feature-car-box ul li:hover i {
+  color: #fff;
+}
+#maps-search .container .car-row2 .feature-car-box ul li:hover span {
+  color: #fff;
+}
+#maps-search .container .car-row2 .feature-car-box ul i {
+  margin: 0 5px 0 0;
+}
+#maps-search .container .car-row2 .feature-car-box .rent-btn {
+  background: #f8f4da;
+}
+#maps-search .container .car-row2 .feature-car-box .rent-btn button {
+  height: 60px;
+  width: 374px;
+  background: #ffcd00;
+  color: #fff;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  display: none;
+}
+#maps-search .container .car-row2 .feature-car-box .rent-btn button:hover {
+  background: #333;
+}
+
+#quote .container .quote-head {
+  padding: 100px 0 70px;
+}
+#quote .container .quote-head p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+#quote .container .quote-head h2 {
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 44px;
+  text-align: center;
+}
+#quote .container .quote-head h2 strong {
+  font-weight: 700;
+}
+#quote .container .quote-info p {
+  font-size: 25px;
+  line-height: 36px;
+  text-align: center;
+  padding: 0 0 30px;
+}
+#quote .container ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin: 0 0 16px;
+  padding: 0 0 180px;
+}
+#quote .container ul li {
+  margin: 5px 15px;
+}
+#quote .container ul li a img {
+  border-radius: 50px;
+}
+#quote .container ul li a .small {
+  height: 60px;
+  width: 60px;
+}
+#quote .container ul li b {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+#quote .container ul li p {
+  font-size: 14px;
+  line-height: 21px;
+  color: #999999;
+}
+
+#car-drivers {
+  background: url(/images/driver-bg-dark.jpg);
+  padding: 0 0 125px;
+}
+#car-drivers .container {
+  position: relative;
+}
+#car-drivers .container .sub-banners {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 150px;
+}
+#car-drivers .container .sub-banners .sub-banner1 {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  background: #333333;
+  position: absolute;
+  bottom: 40%;
+  left: 2%;
+  transform: translate(-2%, -178%);
+}
+#car-drivers .container .sub-banners .sub-banner1 .car-offer {
+  padding: 45px 35px 0;
+}
+#car-drivers .container .sub-banners .sub-banner1 .car-offer p {
+  font-size: 14px;
+  letter-spacing: 3px;
+  line-height: 21px;
+  margin: 0 0 15px;
+}
+#car-drivers .container .sub-banners .sub-banner1 .car-offer h4 {
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 40px;
+  margin: 0 0 8px;
+}
+#car-drivers .container .sub-banners .sub-banner1 .car-offer h4 strong {
+  font-weight: 700;
+}
+#car-drivers .container .sub-banners .sub-banner2 {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  background: #ffcd00;
+  width: 50%;
+  position: absolute;
+  bottom: 40%;
+  left: 115%;
+  transform: translate(-131%, -178%);
+}
+#car-drivers .container .sub-banners .sub-banner2 img {
+  margin: 0 0 0 100px;
+}
+#car-drivers .container .sub-banners .sub-banner2 .car-offer {
+  padding: 45px 0 0;
+}
+#car-drivers .container .sub-banners .sub-banner2 .car-offer p {
+  font-size: 14px;
+  letter-spacing: 3px;
+  line-height: 21px;
+  margin: 0 0 15px;
+}
+#car-drivers .container .sub-banners .sub-banner2 .car-offer h4 {
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 40px;
+  margin: 0 0 8px;
+}
+#car-drivers .container .sub-banners .sub-banner2 .car-offer h4 strong {
+  font-weight: 700;
+}
+#car-drivers .container .drivers-head {
+  padding: 100px 0 70px;
+}
+#car-drivers .container .drivers-head p {
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  color: #fff;
+}
+#car-drivers .container .drivers-head h2 {
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 44px;
+  text-align: center;
+  padding: 0 0 15px;
+  color: #ffcd00;
+}
+#car-drivers .container .drivers-head h2 strong {
+  font-weight: 700;
+}
+#car-drivers .container .driver-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 0 0 48px;
+}
+#car-drivers .container .driver-row .detail-box {
+  display: flex;
+  align-items: center;
+}
+#car-drivers .container .driver-row .detail-box:hover {
+  box-shadow: 0 0 10px 0 #fff;
+}
+#car-drivers .container .driver-row .detail-box .name-box {
+  background: #fff;
+  padding: 53px 0 0;
+}
+#car-drivers .container .driver-row .detail-box .name-box h4 {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 23px;
+  margin: 0 0 27px;
+  padding: 0 0 0 33px;
+}
+#car-drivers .container .driver-row .detail-box .name-box p {
+  font-size: 14px;
+  line-height: 21px;
+  color: #999;
+  padding: 0 0 0 36px;
+}
+#car-drivers .container .driver-row .detail-box .name-box .icons {
+  display: flex;
+  align-items: center;
+  padding: 40px 0 4px 36px;
+}
+#car-drivers .container .driver-row .detail-box .name-box .icons i {
+  font-size: 18px;
+  line-height: 18px;
+  margin: 0 10px 0 0;
+  color: #ccc;
+}
+#car-drivers .container .driver-row .detail-box .name-box .icons i.fa-facebook-f:hover {
+  color: #365493;
+}
+#car-drivers .container .driver-row .detail-box .name-box .icons i.fa-twitter:hover {
+  color: #3cf;
+}
+#car-drivers .container .driver-row .detail-box .name-box .icons i.fa-instagram:hover {
+  color: #dd2a7b;
+}
+#car-drivers .container .view-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#car-drivers .container .view-btn button {
+  width: 360px;
+  height: 62px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 60px;
+  background: #ffcd00;
+  border: none;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+#car-drivers .container .view-btn button:hover {
+  background: #333;
+}
+
+#best-vehicles {
+  background: #f8f4da;
+}
+#best-vehicles .container .vehicles-head {
+  padding: 100px 0 70px;
+}
+#best-vehicles .container .vehicles-head p {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-align: center;
+}
+#best-vehicles .container .vehicles-head h2 {
+  font-size: 40px;
+  line-height: 44px;
+  font-weight: 300;
+  text-align: center;
+  padding: 15px 0 0;
+}
+#best-vehicles .container .vehicles-head h2 strong {
+  font-weight: 700;
+}
+#best-vehicles .container .vehicles-wrapper {
+  display: flex;
+  align-items: start;
+  gap: 30px;
+}
+#best-vehicles .container .vehicles-wrapper .left-bar ul {
+  list-style: none;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  background: #ffcd00;
+  width: 250px;
+  transition: all 0.3s ease-in-out;
+}
+#best-vehicles .container .vehicles-wrapper .left-bar ul li.active {
+  background: #fff;
+}
+#best-vehicles .container .vehicles-wrapper .left-bar ul a {
+  transition: all 0.3s ease-in-out;
+  display: block;
+  padding: 20px 20px;
+}
+#best-vehicles .container .vehicles-wrapper .left-bar ul a:hover {
+  background: #fff;
+}
+#best-vehicles .container .vehicles-wrapper .vehicles-row {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 0 0 130px;
+}
+#best-vehicles .container .vehicles-wrapper .vehicles-row .vehicle-detail {
+  background: #fff;
+}
+#best-vehicles .container .vehicles-wrapper .vehicles-row .vehicle-detail p {
+  font-size: 16px;
+  line-height: 24px;
+  padding: 25px 25px 0;
+}
+#best-vehicles .container .vehicles-wrapper .vehicles-row .vehicle-detail h4 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 0 0 15px;
+  padding: 0 25px 0;
+  color: #ffcd00;
+}
+#best-vehicles .container .vehicles-wrapper .vehicles-row .vehicle-detail h4 strong {
+  font-weight: 700;
+  color: #000;
+}
+#best-vehicles .container .vehicles-wrapper .vehicles-row .vehicle-detail h4 strong:hover {
+  color: #ffcd00;
+}
+#best-vehicles .container .vehicles-wrapper .vehicles-row .vehicle-detail .average {
+  padding: 0 25px 0;
+}
+#best-vehicles .container .vehicles-wrapper .vehicles-row .vehicle-detail .average .per-day {
+  background: #ffcd00;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #fff;
+  padding: 7px 16px;
+  margin: 0 7px 0 0;
+}
+#best-vehicles .container .vehicles-wrapper .vehicles-row .vehicle-detail .average .speed {
+  font-size: 14px;
+  line-height: 21px;
+  color: #bbbbbb;
+  margin-top: 10px;
+  vertical-align: top;
+}
+#best-vehicles .container .vehicles-wrapper .vehicles-row .vehicle-detail .average .speed i {
+  font-size: 20px;
+  padding: 0 5px 0 0;
+}
+#best-vehicles .container .vehicles-wrapper .vehicles-row .vehicle-detail ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  list-style: none;
+  font-size: 12px;
+  line-height: 18px;
+  color: #aaaaaa;
+  gap: 12px;
+  margin: 15px 0 0;
+  padding: 15px 25px;
+  border-top: 1px solid;
+  text-align: center;
+}
+#best-vehicles .container .vehicles-wrapper .vehicles-row .vehicle-detail ul li i {
+  margin: 0 5px 0 0;
+}
+
+#freq-question .container .freq-header {
+  padding: 115px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#freq-question .container .freq-header .col-left p {
+  font-size: 13px;
+  line-height: 19px;
+  letter-spacing: 3px;
+}
+#freq-question .container .freq-header .col-left h2 {
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 44px;
+  padding: 0 0 35px;
+}
+#freq-question .container .freq-header .col-left h2 strong {
+  font-weight: 700;
+}
+#freq-question .container .freq-header .cta-right ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}/*# sourceMappingURL=all.css.map */
